@@ -9,10 +9,19 @@
         android:id="@+id/onBoardFragment"
         android:name="com.ex.notapp.ui.fragments.onboard.onBoardFragment"
         android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" />
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_notFragment"
+            app:destination="@id/notFragment" />
+    </fragment>
     <fragment
         android:id="@+id/onBoardPagingFragment"
         android:name="com.ex.notapp.ui.fragments.onboard.onBoardPagingFragment"
         android:label="fragment_on_board_paging"
         tools:layout="@layout/fragment_on_board_paging" />
+    <fragment
+        android:id="@+id/notFragment"
+        android:name="com.ex.notapp.ui.fragments.onboard.note.NotFragment"
+        android:label="fragment_not"
+        tools:layout="@layout/fragment_not" />
 </navigation>

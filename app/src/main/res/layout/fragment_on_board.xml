@@ -27,33 +27,43 @@
        android:clickable="true"
        android:focusable="true"
       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="24dp"
+       android:text="@string/secons_text"
+       android:textColor="#8E8B8B"
+       android:textStyle="bold"
+       android:layout_marginLeft="150dp"
+       android:layout_marginBottom="138dp"
+       android:layout_gravity="bottom"
+       android:visibility="invisible"
+       android:id="@+id/tv_start"/>
+
 
    <com.google.android.material.tabs.TabLayout
        android:layout_width="12dp"
        android:layout_height="12dp"
-       android:layout_gravity="bottom"
+      android:layout_gravity="bottom"
        android:layout_marginBottom="82dp"
-       android:layout_marginLeft="174dp"
-       android:id="@+id/dot_1"
-       app:tabBackground="@drawable/non_active_dot"
-       />
+      android:layout_marginLeft="178dp"
+      android:id="@+id/dot_1"
+      app:tabBackground="@drawable/non_active_dot"/>
    <com.google.android.material.tabs.TabLayout
        android:layout_width="12dp"
        android:layout_height="12dp"
        android:layout_gravity="bottom"
        android:layout_marginBottom="82dp"
-       android:layout_marginLeft="192dp"
+       android:layout_marginLeft="196dp"
        android:id="@+id/dot_2"
-       app:tabBackground="@drawable/non_active_dot"
-       />
+       app:tabBackground="@drawable/non_active_dot"/>
    <com.google.android.material.tabs.TabLayout
        android:layout_width="12dp"
        android:layout_height="12dp"
        android:layout_gravity="bottom"
        android:layout_marginBottom="82dp"
-       android:layout_marginLeft="210dp"
+       android:layout_marginLeft="214dp"
        android:id="@+id/dot_3"
-       app:tabBackground="@drawable/non_active_dot"
-       />
+       app:tabBackground="@drawable/non_active_dot"/>
+
 
 </FrameLayout>
