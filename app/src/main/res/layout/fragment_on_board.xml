@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0E0C0C"
+    tools:context=".ui.fragments.onboard.onBoardFragment">
+
+   <androidx.viewpager2.widget.ViewPager2
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/view_pager2"/>
+
+   <TextView
+       android:id="@+id/tv_pass"
+       android:layout_width="92dp"
+       android:layout_height="22dp"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="20dp"
+       android:layout_gravity="end"
+       android:lineHeight="22.5dp"
+       android:text="@string/pass_view"
+       android:textColor="#D88B02"
+       android:textSize="16dp"
+       android:textStyle="bold"
+       android:clickable="true"
+       android:focusable="true"
+      />
+
+   <com.google.android.material.tabs.TabLayout
+       android:layout_width="12dp"
+       android:layout_height="12dp"
+       android:layout_gravity="bottom"
+       android:layout_marginBottom="82dp"
+       android:layout_marginLeft="174dp"
+       android:id="@+id/dot_1"
+       app:tabBackground="@drawable/non_active_dot"
+       />
+   <com.google.android.material.tabs.TabLayout
+       android:layout_width="12dp"
+       android:layout_height="12dp"
+       android:layout_gravity="bottom"
+       android:layout_marginBottom="82dp"
+       android:layout_marginLeft="192dp"
+       android:id="@+id/dot_2"
+       app:tabBackground="@drawable/non_active_dot"
+       />
+   <com.google.android.material.tabs.TabLayout
+       android:layout_width="12dp"
+       android:layout_height="12dp"
+       android:layout_gravity="bottom"
+       android:layout_marginBottom="82dp"
+       android:layout_marginLeft="210dp"
+       android:id="@+id/dot_3"
+       app:tabBackground="@drawable/non_active_dot"
+       />
+
+</FrameLayout>

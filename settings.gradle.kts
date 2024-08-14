@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "HW42gitJoin"
+rootProject.name = "NotApp"
 include(":app")
- 

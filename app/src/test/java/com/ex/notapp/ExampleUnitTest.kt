@@ -1,4 +1,4 @@
-package com.example.hw42gitjoin
+package com.ex.notapp
 
 import org.junit.Test
 
