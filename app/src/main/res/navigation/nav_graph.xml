@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/onBoardFragment">
+    app:startDestination="@id/chatFragment">
 
     <fragment
         android:id="@+id/onBoardFragment"
@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_onBoardFragment_to_notFragment"
             app:destination="@id/notFragment" />
+        <action
+            android:id="@+id/action_onBoardFragment_to_signFragment"
+            app:destination="@id/signFragment" />
     </fragment>
     <fragment
         android:id="@+id/onBoardPagingFragment"
@@ -23,5 +26,28 @@
         android:id="@+id/notFragment"
         android:name="com.ex.notapp.ui.fragments.onboard.note.NotFragment"
         android:label="fragment_not"
-        tools:layout="@layout/fragment_not" />
+        tools:layout="@layout/fragment_not" >
+        <action
+            android:id="@+id/action_notFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.ex.notapp.ui.fragments.onboard.note.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="noteId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/signFragment"
+        android:name="com.ex.notapp.ui.SignFragments.SignFragment"
+        android:label="fragment_sign"
+        tools:layout="@layout/fragment_sign" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.ex.notapp.ui.fragments.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
 </navigation>
