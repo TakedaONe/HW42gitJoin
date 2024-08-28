@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHostFragment.navController
-        preferenceHelper = PreferenceHelper()
+        preferenceHelper = PreferenceHelper
         preferenceHelper.unit(this)
 
 

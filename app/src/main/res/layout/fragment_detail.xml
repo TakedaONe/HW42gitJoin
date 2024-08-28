@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.onboard.note.DetailFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:id="@+id/detailFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="#0E0C0C"/>
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:text="30 мая"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:text="17:21"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="6dp"/>
+        
+        <TextView
+            android:id="@+id/txt_ready"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Готово"
+            android:layout_marginLeft="185dp"
+            android:textColor="#D88B02"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <EditText
+       android:layout_marginTop="86dp"
+       android:id="@+id/et_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="116dp"
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fon_1"
+            android:layout_width="80dp"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="34dp"
+            app:cardCornerRadius="16dp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fon_2"
+            android:layout_width="80dp"
+            android:layout_height="46dp"
+            android:backgroundTint="#EBE4C9"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="34dp"
+            app:cardCornerRadius="16dp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fon_3"
+            android:layout_width="80dp"
+            android:layout_height="46dp"
+            android:backgroundTint="#571818"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="34dp"
+            app:cardCornerRadius="16dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_circle_24"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="68dp"/>
+
+
+
+</FrameLayout>
