@@ -87,7 +87,7 @@ class NotFragment : Fragment(), OnClickItem {
     private fun saveLayoutPreference(isGridLayout: Boolean) {
         sharedPreferences.edit().putBoolean("isGridLayout", isGridLayout).apply()
     }
-
+ // ЗАПУТАЛСЯ С ЭТИМ ГИТОМ ЧЕСТНОЕ СЛОВО
     override fun onLongClickItem(noteModel: NoteModel) {
         val builder = AlertDialog.Builder(requireContext())
         with(builder) {
