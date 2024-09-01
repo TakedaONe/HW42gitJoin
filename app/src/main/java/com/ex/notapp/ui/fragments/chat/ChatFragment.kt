@@ -18,6 +18,7 @@ import com.google.firebase.firestore.firestore
 
 class ChatFragment : Fragment() {
 
+
     private lateinit var binding: FragmentChatBinding
     private val chatAdapter = ChatAdapter()
     private val db = Firebase.firestore

@@ -14,6 +14,7 @@ import com.ex.notapp.interfaces.OnClickItem
 import java.util.Date
 import java.util.Locale
 
+
 class NoteAdapter(private val onLongClick: OnClickItem, private val onClick:OnClickItem) : ListAdapter<NoteModel, NoteAdapter.ViewHolder>(DiffCallback()) {
     class ViewHolder(private val binding: ItemNoteBinding) : RecyclerView.ViewHolder(binding.root) {
         private val dateFormat = SimpleDateFormat("EEEE, dd MMM", Locale.getDefault())

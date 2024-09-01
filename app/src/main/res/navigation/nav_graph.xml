@@ -50,4 +50,5 @@
         android:name="com.ex.notapp.ui.fragments.chat.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" />
+
 </navigation>

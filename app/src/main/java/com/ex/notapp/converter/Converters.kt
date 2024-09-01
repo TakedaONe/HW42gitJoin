@@ -12,6 +12,7 @@ class Converters {
             Color.parseColor(it)
         }
     }
+
     @TypeConverter
     fun toColorString(color: Int):String{
         return "#${Integer.toHexString(color)}"

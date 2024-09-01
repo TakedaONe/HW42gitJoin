@@ -26,4 +26,5 @@ interface NoteDao {
 
     @Query("SELECT * FROM noteModel WHERE id = :id")
     fun getById(id: Int): NoteModel?
+
 }

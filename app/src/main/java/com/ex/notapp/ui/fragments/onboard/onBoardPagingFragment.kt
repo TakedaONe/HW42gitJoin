@@ -13,6 +13,7 @@ import com.ex.notapp.databinding.FragmentOnBoardPagingBinding
 
 class onBoardPagingFragment : Fragment() {
 
+
     private lateinit var binding: FragmentOnBoardPagingBinding
 
 

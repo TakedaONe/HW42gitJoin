@@ -12,6 +12,7 @@ import com.ex.notapp.utills.PreferenceHelper
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private lateinit var preferenceHelper: PreferenceHelper

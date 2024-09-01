@@ -15,6 +15,7 @@ class App : Application() {
         var appDatabase: AppDatabase? = null
     }
 
+
     override fun onCreate() {
         super.onCreate()
         val sharedPreferences = PreferenceHelper

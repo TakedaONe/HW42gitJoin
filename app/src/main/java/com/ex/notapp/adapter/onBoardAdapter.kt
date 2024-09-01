@@ -11,6 +11,7 @@ class onBoardAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
         return 3
     }
 
+
     override fun createFragment(position: Int) = onBoardPagingFragment().apply {
         arguments = Bundle().apply {
             putInt(ARG_ONBOARD_POSITION, position)

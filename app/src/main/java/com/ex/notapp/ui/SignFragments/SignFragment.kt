@@ -24,6 +24,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 
 class SignFragment : Fragment() {
 
+
     private lateinit var binding: FragmentSignBinding
     private lateinit var preferenceHelper: SharedPreferences
     private lateinit var auth: FirebaseAuth

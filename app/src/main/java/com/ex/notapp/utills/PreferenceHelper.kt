@@ -11,6 +11,7 @@ object PreferenceHelper {
         sharedPreferences = context.getSharedPreferences("shared", Context.MODE_PRIVATE)
     }
 
+
     var firstEnter: Boolean
         get() = sharedPreferences.getBoolean("firstEnter", false)
         set(value) = sharedPreferences.edit().putBoolean("firstEnter", value).apply()
