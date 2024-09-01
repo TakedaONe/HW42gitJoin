@@ -110,7 +110,7 @@ class FirebaseService : FirebaseMessagingService() {
 
     private fun openAppSettings() {
         val intent = Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
-            data = Uri.parse("package:$packageName")
+            data = Uri.parse("package:$adapter")
         }
         startActivity(intent)
     }
